@@ -1,4 +1,9 @@
+schema_version: 20180708
 name: resize128
-version: 0.0.4
+version: 0.0.24
 entrypoint: convert - -resize 128x128 -
-path: /resize128
+memory: 256
+triggers:
+- name: resize128
+  type: http
+  source: /resize128
